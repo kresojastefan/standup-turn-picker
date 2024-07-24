@@ -94,7 +94,7 @@ export default function Home() {
               className={`px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition ${isChoosing ? 'opacity-50 cursor-progress' : ''}`}
               disabled={isChoosing}
             >
-              Next
+              {users.length === 1 ? 'Finish Standup' : 'Next'}
             </button>
           </div>
         )}
