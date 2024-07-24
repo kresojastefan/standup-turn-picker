@@ -14,7 +14,7 @@ const initialUsers = [
 
 export default function Home() {
   const [users, setUsers] = useState(initialUsers);
-  const [currentUserIndex, setCurrentUserIndex] = useState(0);
+  const [currentUserIndex, setCurrentUserIndex]:any = useState(0);
   const [isChoosing, setIsChoosing] = useState(false);
   const [firstRun, setFirstRun] = useState(true);
   const [startStandup, setStartStandup] = useState(false);
@@ -50,7 +50,7 @@ export default function Home() {
     }, 100);
   };
 
-  const removeUser = (user) => {
+  const removeUser = (user: string) => {
     const newUsers = users.filter((u) => u !== user);
     setUsers(newUsers);
     if (newUsers.length > 0) {
