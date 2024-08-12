@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react';
 
 import { initialUsers } from './constants';
 
-console.log('initialUsers', initialUsers);
-
 export default function Home() {
   const [users, setUsers] = useState(initialUsers);
   const [currentUserIndex, setCurrentUserIndex]:any = useState(0);
