@@ -1,16 +1,9 @@
 'use client'
 import { useState, useEffect } from 'react';
 
-export const initialUsers = [
-  'Florian',
-  'Jude',
-  'Boban',
-  'Aleksa',
-  'Aleksandar',
-  'Martin',
-  'Mr. Jen',
-  'Stefan',
-];
+import { initialUsers } from './constants';
+
+console.log('initialUsers', initialUsers);
 
 export default function Home() {
   const [users, setUsers] = useState(initialUsers);
